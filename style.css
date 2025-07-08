@@ -1,75 +1,157 @@
 
+/* Ogólne style body i resetowanie marginesów/paddingów */
 body {
-    margin: 0;
     font-family: sans-serif;
-    background: #f9f9f9;
-    color: #222;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Bardzo ciemne tło */
+    color: #f0f0f0; /* Jasny tekst */
 }
+
+/* Style nagłówka (header) */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 15px 30px;
+    background-color: #222;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
 .logo {
+    font-size: 1.8em;
     font-weight: bold;
-    font-size: 1.5rem;
+    color: #eee;
 }
+
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 15px;
+    display: flex; /* Ułożenie elementów menu w linii */
 }
-nav li {
-    position: relative;
+
+nav ul li {
+    position: relative; /* Potrzebne do pozycjonowania submenu */
 }
-nav a {
+
+nav ul li a {
+    color: #eee;
     text-decoration: none;
-    color: #222;
-    padding: 8px;
+    padding: 10px 15px;
     display: block;
+    transition: background-color 0.3s ease;
 }
+
+nav ul li a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Style submenu */
 .submenu {
-    display: none;
+    display: none; /* Domyślnie ukryte */
     position: absolute;
-    top: 100%;
+    top: 100%; /* Pod głównym linkiem */
     left: 0;
-    background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #333;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    z-index: 1000; /* Upewnij się, że jest na wierzchu */
+    border-radius: 5px;
 }
-nav li:hover > .submenu {
-    display: block;
-}
-.cat img {
-    height: 50px;
-}
-.banner img {
+
+.submenu li {
     width: 100%;
-    display: block;
 }
-.products {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 40px;
+
+.submenu a {
+    padding: 8px 15px;
+    white-space: nowrap; /* Zapobiega zawijaniu się tekstu */
 }
-.product {
-    background: white;
+
+nav ul li:hover .submenu {
+    display: block; /* Pokaż submenu po najechaniu na główny element */
+}
+
+.cat img {
+    height: 50px; /* Dostosuj rozmiar kota */
+    width: auto;
+    border-radius: 50%; /* Jeśli chcesz, żeby był okrągły */
+}
+
+/* Style dla głównej zawartości (main) */
+main {
     padding: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    width: 300px;
+    max-width: 1200px; /* Ograniczenie szerokości zawartości */
+    margin: 0 auto; /* Wyśrodkowanie zawartości */
 }
+
+/* Styl dla banera */
+.banner {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.banner img {
+    max-width: 100%; /* Upewnij się, że banner się skaluje */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Style dla siatki produktów (nowy kontener) */
+.products-grid {
+    display: flex; /* Użyj flexbox do ułożenia produktów */
+    flex-wrap: wrap; /* Zezwól produktom na zawijanie do następnej linii */
+    justify-content: center; /* Wyśrodkowanie produktów w linii */
+    gap: 30px; /* Odstęp między produktami */
+    padding: 20px 0;
+}
+
+/* Styl dla pojedynczego elementu produktu */
+.product-item {
+    background-color: #2b2b2b; /* Tło dla boxa produktu */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Głęboki cień */
+    padding: 20px;
+    text-align: center;
+    width: 280px; /* Stała szerokość boxa produktu */
+    flex-shrink: 0; /* Zapobiega kurczeniu się elementów */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px); /* Delikatne podniesienie po najechaniu */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.product-item img {
+    max-width: 100%; /* Obrazek dopasowuje się do szerokości boxa */
+    height: 250px; /* Ustaw stałą wysokość dla zdjęć produktów */
+    object-fit: cover; /* Wypełnij obszar, przycinając jeśli trzeba, zachowując proporcje */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.4em;
+    margin: 10px 0 5px;
+    color: #eee;
+}
+
+.product-item p {
+    font-size: 1.1em;
+    color: #bbb;
+    margin-bottom: 5px;
+}
+
+/* Styl stopki (footer) */
 footer {
     text-align: center;
     padding: 20px;
-    font-size: 0.8em;
-    color: #555;
+    background-color: #222;
+    color: #aaa;
+    font-size: 0.9em;
+    margin-top: 40px;
 }
