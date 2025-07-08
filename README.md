@@ -1,70 +1,16 @@
-# avvemiree.github.io
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>avvenire‑style Shop</title>
+  <title>RELΛB‑style Shop</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-    body { margin:0; font-family: sans-serif; background:#f9f9f9; color:#222; }
-    header { display:flex; justify-content: space-between; align-items:center; padding:10px 20px; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); position:sticky; top:0; z-index:100;}
-    .logo { font-weight:bold; font-size:1.2rem; }
-    nav ul { list-style:none; margin:0; padding:0; display:flex; gap:15px; }
-    nav li { position:relative; }
-    nav a { text-decoration:none; color:#222; padding:8px; display:block; }
-    nav li:hover > .submenu { display:block; }
-    .submenu {
-      display:none;
-      position:absolute;
-      top:100%; left:0;
-      background:#fff;
-      box-shadow:0 2px 8px rgba(0,0,0,0.1);
-      min-width:150px;
-    }
-    .submenu a { padding:10px; }
-    .cart-search { display:flex; gap:15px; align-items:center; }
-    .cart-search img { width:24px; height:24px; cursor:pointer; }
-    .hero {
-      margin:20px auto;
-      max-width:1200px;
-    }
-    .products {
-      display:grid;
-      grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
-      gap:20px;
-      padding:20px;
-      max-width:1200px;
-      margin:auto;
-    }
-    .product {
-      background:#fff;
-      padding:10px; text-align:center;
-      box-shadow:0 1px 4px rgba(0,0,0,0.1);
-    }
-    .product img { max-width:100%; height:auto; }
-    .product h3 { margin:10px 0 5px; font-size:1rem; }
-    .product p { margin:0; color:#555; }
-    footer {
-      background:#fff; padding:20px;
-      text-align:center; color:#777;
-      box-shadow:0 -2px 5px rgba(0,0,0,0.05);
-      margin-top:40px;
-    }
-    .newsletter input[type="email"] {
-      padding:10px; width:200px;
-      margin-right:10px; border:1px solid #ccc;
-    }
-    .newsletter button {
-      padding:10px 16px; border:none;
-      background:#222; color:#fff;
-      cursor:pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="logo">avvenire</div>
+  <div class="logo">RELΛB</div>
   <nav>
     <ul>
       <li><a href="#">CLOTHING</a>
@@ -84,45 +30,38 @@
       <li><a href="#">COLLECTION</a>
         <div class="submenu">
           <a href="#">New Arrivals</a>
-          <a href="#">Avvenire</a>
+          <a href="#">Relab Classic</a>
           <a href="#">Summer</a>
-          <!-- etc. -->
         </div>
       </li>
     </ul>
   </nav>
   <div class="cart-search">
-    <img src="https://scontent-waw2-1.xx.fbcdn.net/v/t1.15752-9/511219342_1503621854345137_9120485761246268162_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=IjX-JLDzvfoQ7kNvwHjFsRi&_nc_oc=Adkajt3n-LcNyKat6obc0UyAdmyeAlTPh7JczyzgIX0FTah9y4peBHN7fwsvRKPFFPk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&oh=03_Q7cD2wH0w--ePywWTVpbOJoi4PAHptTzwigwLSa3F6rxqA7myQ&oe=6894B5F4" alt="Search">
-    <img src="https://scontent-waw2-1.xx.fbcdn.net/v/t1.15752-9/511219342_1503621854345137_9120485761246268162_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=IjX-JLDzvfoQ7kNvwHjFsRi&_nc_oc=Adkajt3n-LcNyKat6obc0UyAdmyeAlTPh7JczyzgIX0FTah9y4peBHN7fwsvRKPFFPk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&oh=03_Q7cD2wH0w--ePywWTVpbOJoi4PAHptTzwigwLSa3F6rxqA7myQ&oe=6894B5F4" alt="Cart">
+    <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search">
+    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart">
   </div>
 </header>
 
 <section class="hero">
-  <img src="https://scontent-waw2-1.xx.fbcdn.net/v/t1.15752-9/511219342_1503621854345137_9120485761246268162_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=IjX-JLDzvfoQ7kNvwHjFsRi&_nc_oc=Adkajt3n-LcNyKat6obc0UyAdmyeAlTPh7JczyzgIX0FTah9y4peBHN7fwsvRKPFFPk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&oh=03_Q7cD2wH0w--ePywWTVpbOJoi4PAHptTzwigwLSa3F6rxqA7myQ&oe=6894B5F4" alt="Baner" style="width:100%;">
+  <img src="https://via.placeholder.com/1200x400?text=Promocja+Nowych+Produkt%C3%B3w" alt="Baner" style="width:100%;">
 </section>
 
 <section class="products">
   <div class="product">
-    <img src="https://scontent-waw2-1.xx.fbcdn.net/v/t1.15752-9/511219342_1503621854345137_9120485761246268162_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=IjX-JLDzvfoQ7kNvwHjFsRi&_nc_oc=Adkajt3n-LcNyKat6obc0UyAdmyeAlTPh7JczyzgIX0FTah9y4peBHN7fwsvRKPFFPk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&oh=03_Q7cD2wH0w--ePywWTVpbOJoi4PAHptTzwigwLSa3F6rxqA7myQ&oe=6894B5F4" alt="Produkt">
+    <img src="https://via.placeholder.com/300x300?text=T-Shirt+RELΛB" alt="Produkt">
     <h3>"R" T‑Shirt</h3>
     <p>169,00 zł</p>
   </div>
   <div class="product">
-    <img src="https://scontent-waw2-1.xx.fbcdn.net/v/t1.15752-9/511219342_1503621854345137_9120485761246268162_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=IjX-JLDzvfoQ7kNvwHjFsRi&_nc_oc=Adkajt3n-LcNyKat6obc0UyAdmyeAlTPh7JczyzgIX0FTah9y4peBHN7fwsvRKPFFPk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&oh=03_Q7cD2wH0w--ePywWTVpbOJoi4PAHptTzwigwLSa3F6rxqA7myQ&oe=6894B5F4" alt="Produkt">
+    <img src="https://via.placeholder.com/300x300?text=Bluza+RELΛB" alt="Produkt">
     <h3>Faded Blue Hoodie</h3>
     <p>399,00 zł</p>
   </div>
-  <div class="product">
-    <img src="https://scontent-waw2-1.xx.fbcdn.net/v/t1.15752-9/511219342_1503621854345137_9120485761246268162_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=IjX-JLDzvfoQ7kNvwHjFsRi&_nc_oc=Adkajt3n-LcNyKat6obc0UyAdmyeAlTPh7JczyzgIX0FTah9y4peBHN7fwsvRKPFFPk&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&oh=03_Q7cD2wH0w--ePywWTVpbOJoi4PAHptTzwigwLSa3F6rxqA7myQ&oe=6894B5F4" alt="Produkt">
-    <h3>Nylon Black Cap</h3>
-    <p>149,00 zł</p>
-  </div>
-  <!-- Można dodać kolejne -->
 </section>
 
 <section class="newsletter">
   <div style="text-align:center; padding:20px;">
-    <h2>DOŁĄCZ DO KLUBU AVVENIRE</h2>
+    <h2>DOŁĄCZ DO KLUBU RELAB</h2>
     <p>Zapisz się i zyskaj 10% rabatu</p>
     <input type="email" placeholder="Twój e‑mail">
     <button>Zapisz się</button>
@@ -136,3 +75,120 @@
 
 </body>
 </html>
+body {
+  margin:0;
+  font-family: sans-serif;
+  background:#f9f9f9;
+  color:#222;
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding:10px 20px;
+  background:#fff;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.logo {
+  font-weight:bold;
+  font-size:1.2rem;
+}
+
+nav ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  gap:15px;
+}
+
+nav li {
+  position:relative;
+}
+
+nav a {
+  text-decoration:none;
+  color:#222;
+  padding:8px;
+  display:block;
+}
+
+nav li:hover > .submenu {
+  display:block;
+}
+
+.submenu {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#fff;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  min-width:150px;
+}
+
+.submenu a {
+  padding:10px;
+}
+
+.cart-search {
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+.cart-search img {
+  width:24px;
+  height:24px;
+  cursor:pointer;
+}
+
+.products {
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:20px;
+  padding:20px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.product {
+  background:#fff;
+  padding:10px;
+  text-align:center;
+  box-shadow:0 1px 4px rgba(0,0,0,0.1);
+}
+
+.product img {
+  max-width:100%;
+  height:auto;
+}
+
+footer {
+  background:#fff;
+  padding:20px;
+  text-align:center;
+  color:#777;
+  box-shadow:0 -2px 5px rgba(0,0,0,0.05);
+  margin-top:40px;
+}
+
+.newsletter input[type="email"] {
+  padding:10px;
+  width:200px;
+  margin-right:10px;
+  border:1px solid #ccc;
+}
+
+.newsletter button {
+  padding:10px 16px;
+  border:none;
+  background:#222;
+  color:#fff;
+  cursor:pointer;
+}
