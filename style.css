@@ -155,3 +155,58 @@ footer {
     font-size: 0.9em;
     margin-top: 40px;
 }
+/* Style dla siatki produktów (nowy kontener) */
+.products-grid {
+    display: flex; /* Użyj flexbox do ułożenia produktów */
+    flex-wrap: wrap; /* Zezwól produktom na zawijanie do następnej linii */
+    justify-content: center; /* Wyśrodkowanie produktów w linii */
+    gap: 30px; /* Odstęp między produktami */
+    padding: 20px 0;
+}
+
+/* Styl dla pojedynczego elementu produktu */
+.product-item {
+    background-color: #2b2b2b; /* Tło dla boxa produktu */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Głęboki cień */
+    padding: 20px;
+    text-align: center;
+    width: 280px; /* Stała szerokość boxa produktu */
+    flex-shrink: 0; /* Zapobiega kurczeniu się elementów */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px); /* Delikatne podniesienie po najechaniu */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.product-item img {
+    max-width: 100%; /* Obrazek dopasowuje się do szerokości boxa */
+    height: 250px; /* Ustaw stałą wysokość dla zdjęć produktów */
+    object-fit: cover; /* Wypełnij obszar, przycinając jeśli trzeba, zachowując proporcje */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 1.4em;
+    margin: 10px 0 5px;
+    color: #eee;
+}
+
+.product-item p {
+    font-size: 1.1em;
+    color: #bbb;
+    margin-bottom: 5px;
+}
+
+/* Styl stopki (footer) */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #aaa;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
